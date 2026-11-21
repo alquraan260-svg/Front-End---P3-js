@@ -476,3 +476,57 @@ tr.row-soon {
     text-align: center;
   }
 }
+
+/* ===== Assignments Page ===== */
+
+/* Remove extra card padding */
+.assignments-section .card,
+.statistics-section .card {
+  padding: 0;
+}
+
+/* Make cards fill their columns */
+.assignments-section .card,
+.statistics-section .card {
+  width: 100%;
+  height: 100%;
+}
+
+/* Keep form inputs inside the card */
+.assignments-section input,
+.assignments-section select {
+  width: 100%;
+  min-width: 0;
+}
+
+/* Allow the table to scroll inside its card */
+.assignments-section .table-responsive {
+  width: 100%;
+  overflow-x: auto;
+}
+
+/* Prevent the Bootstrap columns from overflowing */
+.assignments-section .row > div,
+.statistics-section .row > div {
+  min-width: 0;
+}
+
+/* Assignments Table */
+.assignments-section .table {
+  min-width: 0;
+  width: 100%;
+}
+
+.assignments-section th,
+.assignments-section td {
+  padding: 10px 8px;
+  font-size: 0.85rem;
+}
+
+/* ===== Student Info Page ===== */
+
+.student-profile-section .profile-icon {
+  font-size: 180px;
+  line-height: 1;
+  display: inline-block;
+}
