@@ -21,8 +21,7 @@
   </head>
 
   <body>
-    <!-- Sidebar will be added here -->
-
+    <aside></aside>
     <!-- Top Navbar -->
     <nav class="navbar navbar-expand-lg bg-white shadow-sm top-navbar">
       <div class="container-fluid justify-content-end">
@@ -60,7 +59,7 @@
           <i class="bi bi-clipboard-check fs-2"></i>
           <div>
             <h2>Assignments</h2>
-            <p>Mange your assignments, due dates, and progress.</p>
+            <p>Manage your assignments, due dates, and progress.</p>
           </div>
         </div>
       </header>
@@ -70,9 +69,7 @@
         <div class="row g-4">
           <div class="col-12 col-md-4">
             <div class="card shadow-sm">
-              <div
-                class="card-body d-flex  align-items-center  gap-3"
-              >
+              <div class="card-body d-flex align-items-center gap-3">
                 <i class="bi bi-journal-text fs-1 mb-2 text-primary"></i>
                 <div>
                   <h5 class="card-title">Total Assignments</h5>
@@ -84,9 +81,7 @@
 
           <div class="col-12 col-md-4">
             <div class="card shadow-sm">
-              <div
-                class="card-body d-flex  align-items-center  gap-3"
-              >
+              <div class="card-body d-flex align-items-center gap-3">
                 <i class="bi bi-check-circle fs-1 mb-2 text-success"></i>
 
                 <div>
@@ -99,9 +94,7 @@
 
           <div class="col-12 col-md-4">
             <div class="card shadow-sm">
-              <div
-                class="card-body d-flex  align-items-center  gap-3"
-              >
+              <div class="card-body d-flex align-items-center gap-3">
                 <i class="bi bi-hourglass-split fs-1 mb-2 text-warning"></i>
                 <div>
                   <h5 class="card-title">Pending Assignments</h5>
@@ -113,99 +106,101 @@
         </div>
       </section>
       <!-- Assignments Management Section (Assignment Form + List)-->
-        <section class="assignments-section">
-            <div class="row g-4">
-            <!-- Assignment Form -->
-            <div class="col-12 col-lg-4">
-                <div class="card shadow-sm">
-                <div class="card-body">
-                    <h5 class="card-title mb-4">
-                        <i class="bi bi-plus-circle text-primary me-2"></i>
-                        Add New Assignment
-                    </h5>
-                    <form id="assignmentForm">
-                    <div class="mb-3">
-                        <label for="assignmentTitle" class="form-label"
-                        >Assignment Title</label
-                        >
-                        <input
-                        type="text"
-                        class="form-control"
-                        id="assignmentTitle"
-                        placeholder="Enter assignment title"
-                        required
-                        />
-                    </div>
-    
-                    <div class="mb-3">
-                        <label for="assignmentCourse" class="form-label"
-                        >Course</label
-                        >
-                        <select class="form-select" id="assignmentCourse" required>
-                        <option value="" disabled selected>Select a course</option>
-                        </select>
-                    </div>
-    
-                    <div class="mb-3">
-                        <label for="assignmentDueDate" class="form-label"
-                        >Deadline</label
-                        >
-                        <input
-                        type="date"
-                        class="form-control"
-                        id="assignmentDueDate"
-                        required
-                        />
-                    </div>
+      <section class="assignments-section">
+        <div class="row g-4">
+          <!-- Assignment Form -->
+          <div class="col-12 col-lg-4">
+            <div class="card shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title mb-4">
+                  <i class="bi bi-plus-circle text-primary me-2"></i>
+                  Add New Assignment
+                </h5>
+                <form id="assignmentForm">
+                  <div class="mb-3">
+                    <label for="assignmentTitle" class="form-label"
+                      >Assignment Title</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="assignmentTitle"
+                      placeholder="Enter assignment title"
+                      required
+                    />
+                  </div>
 
-                    <div class="mb-3">
-                        <label for="assignmentStatus" class="form-label"
-                        >Assignment Status</label
-                        >
-                        <select class="form-select" id="assignmentStatus" required>
-                        <option value="To Do" selected>To Do</option>
-                        <option value="Doing">Doing</option>
-                        <option value="Done">Done</option>
-                        </select>
-                    </div>
-    
-                    <button type="submit" class="btn btn-primary w-100">
-                        <i class="bi bi-plus-circle me-2"></i>
-                        Add Assignment
-                    </button>
-                    </form>
-                </div>
-                </div>
+                  <div class="mb-3">
+                    <label for="assignmentCourse" class="form-label"
+                      >Course</label
+                    >
+                    <select class="form-select" id="assignmentCourse" required>
+                      <option value="" disabled selected>
+                        Select a course
+                      </option>
+                    </select>
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="assignmentDueDate" class="form-label"
+                      >Deadline</label
+                    >
+                    <input
+                      type="date"
+                      class="form-control"
+                      id="assignmentDueDate"
+                      required
+                    />
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="assignmentStatus" class="form-label"
+                      >Assignment Status</label
+                    >
+                    <select class="form-select" id="assignmentStatus" required>
+                      <option value="To Do" selected>To Do</option>
+                      <option value="Doing">Doing</option>
+                      <option value="Done">Done</option>
+                    </select>
+                  </div>
+
+                  <button type="submit" class="btn btn-primary w-100">
+                    <i class="bi bi-plus-circle me-2"></i>
+                    Add Assignment
+                  </button>
+                </form>
+              </div>
             </div>
-    
-            <!-- Assignment List -->
-            <div class="col-12 col-lg-8">
-                <div class="card shadow-sm">
-                <div class="card-body">
-                    <h5 class="card-title mb-4">
-                        <i class="bi bi-list text-primary me-2"></i>
-                        Assignment List
-                    </h5>
-                    <div class="table-responsive">
-                        <table class="table table-hover align-middle">
-                            <thead>
-                                <tr>
-                                    <th>#</th>
-                                    <th>Course</th>
-                                    <th>Assignment Title</th>
-                                    <th>Deadline</th>
-                                    <th>Status</th>
-                                    <th>Actions</th>
-                                </tr>
-                            </thead>
-                            <tbody id="assignmentTableBody">
-                            </tbody>
-                        </table>
-                    </div>
+          </div>
+
+          <!-- Assignment List -->
+          <div class="col-12 col-lg-8">
+            <div class="card shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title mb-4">
+                  <i class="bi bi-list text-primary me-2"></i>
+                  Assignment List
+                </h5>
+                <div class="table-responsive">
+                  <table class="table table-hover align-middle">
+                    <thead>
+                      <tr>
+                        <th>#</th>
+                        <th>Course</th>
+                        <th>Assignment Title</th>
+                        <th>Deadline</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                      </tr>
+                    </thead>
+                    <tbody id="assignmentTableBody"></tbody>
+                  </table>
                 </div>
-                </div>
+              </div>
             </div>
-            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- Bootstrap JavaScript -->
