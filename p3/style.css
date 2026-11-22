@@ -598,3 +598,18 @@ tbody tr:hover {
 #studentView p {
   font-size: 17px;
 }
+@media (max-width: 600px) {
+  table {
+    min-width: 0;
+  }
+
+  th,
+  td {
+    padding: 10px 8px;
+    font-size: 0.8rem;
+  }
+
+  td {
+    white-space: nowrap;
+  }
+}

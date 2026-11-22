@@ -55,8 +55,7 @@ function renderDashboard() {
   const upcoming = assignments
     .filter((a) => a.status !== "Done")
     .sort((a, b) =>
-      a.deadline.localeCompare(b.deadline)
-    )
+    (a.deadline || "").localeCompare(b.deadline || "")    )
     .slice(0, 5);
 
   // Check if there are no upcoming assignments
@@ -106,6 +105,7 @@ function renderDashboard() {
     );
 
   });
-
 }
+ renderDashboard();
+
 

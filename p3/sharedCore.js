@@ -14,9 +14,9 @@ const STORAGE_KEYS = {
 // ========================================
 
 const DEFAULT_STUDENT = {
-  fullName: "Alex Johnson",
+  fullName: "Odai Bilal",
   dob: "2003-05-14",
-  major: "Computer Science",
+  major: "Computer Engineering",
   nationality: "Jordanian",
   photo: "",
 };
