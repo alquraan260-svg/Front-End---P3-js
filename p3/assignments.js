@@ -83,8 +83,27 @@ function renderAssignments() {
 
     tableBody.appendChild(row);
   });
+  updateStats();
+}
+function updateStats() {
+  const toDoCount = assignments.filter(
+    (assignment) => assignment.status === "To Do",
+  ).length;
+
+  const doingCount = assignments.filter(
+    (assignment) => assignment.status === "Doing",
+  ).length;
+
+  const doneCount = assignments.filter(
+    (assignment) => assignment.status === "Done",
+  ).length;
+
+  document.getElementById("ToDo").textContent = toDoCount;
+  document.getElementById("Doing").textContent = doingCount;
+  document.getElementById("Done").textContent = doneCount;
 }
 renderAssignments();
+updateStats();
 
 document
   .getElementById("assignmentTableBody")
