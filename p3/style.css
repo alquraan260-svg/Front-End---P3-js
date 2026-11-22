@@ -4,7 +4,6 @@
   padding: 0;
 }
 
-
 body {
   font-family:
     system-ui,
@@ -17,7 +16,6 @@ body {
   line-height: 1.5;
 }
 
-
 .app {
   display: flex;
   min-height: 100vh;
@@ -29,7 +27,6 @@ body {
   flex: 1;
   min-width: 0;
 }
-
 
 .sidebar {
   width: 240px;
@@ -69,7 +66,6 @@ body {
   font-size: 1.6rem;
 }
 
-
 .nav {
   display: flex;
   flex-direction: column;
@@ -86,7 +82,9 @@ body {
   text-decoration: none;
   border-radius: 10px;
   font-weight: 500;
-  transition: background 0.15s, color 0.15s;
+  transition:
+    background 0.15s,
+    color 0.15s;
 }
 
 .nav-link:hover {
@@ -108,7 +106,6 @@ body {
 .theme-toggle:hover {
   background: rgba(255, 255, 255, 0.1);
 }
-
 
 .topbar {
   display: flex;
@@ -140,12 +137,10 @@ body {
   cursor: pointer;
 }
 
-
 main {
   padding: 28px 32px;
   flex: 1;
 }
-
 
 .avatar {
   border-radius: 50%;
@@ -164,7 +159,6 @@ main {
   border: 4px solid #4f46e5;
 }
 
-
 .card {
   background: #fff;
   border-radius: 12px;
@@ -179,7 +173,6 @@ main {
   font-size: 1.1rem;
   margin-bottom: 16px;
 }
-
 
 input,
 select {
@@ -197,7 +190,6 @@ button:focus-visible {
   outline: 2px solid #4f46e5;
   outline-offset: 1px;
 }
-
 
 .table-card {
   padding: 0;
@@ -237,7 +229,6 @@ tbody tr:hover {
   background: rgba(127, 127, 127, 0.05);
 }
 
-
 .actions {
   display: flex;
   gap: 6px;
@@ -248,7 +239,6 @@ tbody tr:hover {
   text-align: center;
   color: #6b7280;
 }
-
 
 .btn {
   font: inherit;
@@ -288,7 +278,6 @@ tbody tr:hover {
   padding: 5px 10px;
   font-size: 0.85rem;
 }
-
 
 @media (max-width: 860px) {
   .sidebar {
@@ -338,7 +327,6 @@ tbody tr:hover {
   margin-bottom: 20px;
 }
 
-
 .stats-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
@@ -381,13 +369,11 @@ tbody tr:hover {
   border-left-color: #dc2626;
 }
 
-
 .grid-2 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 18px;
 }
-
 
 .progress-row {
   display: flex;
@@ -420,7 +406,6 @@ tbody tr:hover {
   display: flex;
   justify-content: space-between;
 }
-
 
 .upcoming-list {
   list-style: none;
@@ -457,7 +442,6 @@ tbody tr:hover {
   font-size: 0.85rem;
   color: #6b7280;
 }
-
 
 .muted {
   color: #6b7280;
@@ -505,7 +489,6 @@ tbody tr:hover {
   background: #fee2e2;
   color: #991b1b;
 }
-
 
 /* ===== Assignments Page ===== */
 
@@ -559,4 +542,59 @@ tbody tr:hover {
   font-size: 180px;
   line-height: 1;
   display: inline-block;
+}
+.top-navbar .bi-bell,
+.top-navbar .bi-person-circle,
+.page-header .bi-clipboard-check,
+.bi-plus-circle,
+.assignment-list-icon,
+.icon-profile,
+.icon-info {
+  color: #5b4ee6;
+}
+.page-header .bi-clipboard-check {
+  font-size: 50px !important;
+}
+.bi-plus-circle,
+.top-navbar .bi-bell,
+.assignment-list-icon {
+  -webkit-text-stroke: 0.7px;
+}
+.icon-info {
+  font-size: 80px !important;
+}
+.student-profile-section .profile-divider {
+  border-right: 1px solid #ddd;
+}
+.student-detail-icon {
+  color: #5b4ee6;
+  background-color: #eeecff;
+  font-size: 24px;
+  padding: 10px;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+.student-detail-value {
+  width: 50%;
+  flex-shrink: 0;
+  text-align: left;
+  margin-left: 0;
+}
+#studentView > div {
+  padding-top: 14px;
+  padding-bottom: 14px !important;
+}
+#studentView h6 {
+  width: 30%;
+  flex-grow: 0 !important;
+  flex-shrink: 0;
+}
+#studentView h6 {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+#studentView p {
+  font-size: 17px;
 }
