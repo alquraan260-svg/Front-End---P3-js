@@ -265,3 +265,9 @@ function clearErrors(form) {
 function confirmDelete(message) {
   return Promise.resolve(window.confirm(message));
 }
+
+const navbarStudentName = document.getElementById("studentName");
+
+if (navbarStudentName) {
+  navbarStudentName.textContent = student.fullName;
+}
