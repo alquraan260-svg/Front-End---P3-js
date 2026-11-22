@@ -598,6 +598,7 @@ tbody tr:hover {
 #studentView p {
   font-size: 17px;
 }
+
 @media (max-width: 600px) {
   table {
     min-width: 0;
@@ -612,4 +613,11 @@ tbody tr:hover {
   td {
     white-space: nowrap;
   }
+}
+
+#assignmentTableBody td:last-child {
+  white-space: nowrap;
+}
+#assignmentTableBody .assignment-status {
+  min-width: 100px;
 }
