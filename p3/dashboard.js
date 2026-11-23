@@ -21,9 +21,7 @@ function renderDashboard() {
     `Welcome back, ${firstName}! Here's your academic overview.`;
 
   // Calculate completion percentage
-  const pct = total
-    ? Math.round((completed / total) * 100)
-    : 0;
+  const pct = total ? Math.round((completed / total) * 100) : 0;
 
   $("#completionPct").textContent = pct + "%";
 
